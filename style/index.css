@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*====  работа с header ====*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: #141414;
+}
+
+.container-for-animation {
+    text-align: center;
+    color: #f2f1f0;
+    animation: textAppearance 1.5s 1;
+}
+
+.container-for-animation span{
+    display: block;
+}
+
+.main-text {
+    font-size: 3.5em;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+/* анимация для баннера */
+@keyframes textAppearance {
+    0% {
+        color: #141414;
+        transform: translateY(-40px);
+    }
+    100% {
+        color: #f2f1f0;;
+        transform: translateY(0);
+    }
+}
+
+/*==================*/
+
+/* работа с content */
+.content {
+    display: flex;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+
+.list-of-participants {
+    width: 55%;
+    height: 600px;
+    background-color: #737271;
+}
+
+.panel {
+    width: 20%;
+    height: 300px;
+    background-color: #737271;
+}
+/*==================*/
+
+
+/* работа с footer */
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #141414;
+}
+/*==================*/
