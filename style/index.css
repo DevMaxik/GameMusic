@@ -13,9 +13,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 754px;
     width: 100%;
     background-color: #141414;
+    animation: sizeBanner 1.5s linear 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .container-for-animation {
@@ -29,7 +31,7 @@ header {
 }
 
 .main-text {
-    font-size: 3.5em;
+    font-size: 5em;
 }
 
 nav {
@@ -38,15 +40,25 @@ nav {
     border: 1px solid #000;
 }
 
-/* анимация для баннера */
+/* анимация для текста баннера */
 @keyframes textAppearance {
     0% {
         color: #141414;
         transform: translateY(-40px);
+        letter-spacing: 20px;
     }
     100% {
         color: #f2f1f0;;
         transform: translateY(0);
+    }
+}
+
+@keyframes sizeBanner {
+    0% {
+        height: 754px;;
+    }
+    100% {
+        height: 377px;
     }
 }
 
