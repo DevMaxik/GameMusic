@@ -22,8 +22,8 @@ header {
 
 .container-for-animation {
     text-align: center;
-    color: #f2f1f0;
     animation: textAppearance 1.5s 1;
+    animation-fill-mode: forwards;
 }
 
 .container-for-animation span{
@@ -37,7 +37,7 @@ header {
 nav {
     height: 50px;
     width: 100%;
-    border: 1px solid #000;
+    background-color: #737271;
 }
 
 /* анимация для текста баннера */
@@ -46,9 +46,11 @@ nav {
         color: #141414;
         transform: translateY(-40px);
         letter-spacing: 20px;
+        text-shadow: 0 0 30px #7a04dd;
     }
     100% {
-        color: #f2f1f0;;
+        color: #f2f1f0;
+        text-shadow: 0 0 20px #7a04dd;
         transform: translateY(0);
     }
 }
