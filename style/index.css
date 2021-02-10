@@ -16,14 +16,14 @@ header {
     height: 754px;
     width: 100%;
     background-color: #141414;
-    animation: sizeBanner 1.5s linear 3s;
+    animation: sizeBanner 1s linear 2.5s;
     animation-fill-mode: forwards;
 }
 
 .container-for-animation {
     text-align: center;
     color: #141414;
-    animation: textAppearance 2s linear 1s;
+    animation: textAppearance 1.5s linear 1s;
     animation-fill-mode: forwards;
 }
 
