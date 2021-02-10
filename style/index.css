@@ -95,12 +95,12 @@ nav ul li a:hover {
 /* работа с content */
 .content {
     display: flex;
+    justify-content: space-around;
     margin-top: 20px;
     margin-left: 5%;
-    justify-content: space-around;
 }
 
-.list-of-participants {
+.audio-list {
     width: 55%;
     height: 600px;
     background-color: #737271;
@@ -121,3 +121,43 @@ footer {
     background-color: #141414;
 }
 /*==================*/
+
+
+.audio-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width: 80%;
+    background-color: #141414;
+}
+
+.cover {
+    width: 180px;
+    height: 180px;
+    background-color: #f2f1f0;
+}
+
+.head-card {
+    height: 180px;
+    color: #f2f1f0;
+    text-align: center;
+}
+
+.name {
+    font-size: 2em;
+}
+
+.author {
+    font-size: 0.5em;
+}
+
+.description {
+    width: 80%;
+    height: 50px;
+    background-color: #f2f1f0;
+}
+
+audio:focus {
+    outline: 0;
+}
