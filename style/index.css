@@ -98,12 +98,61 @@ nav ul li a:hover {
     justify-content: space-around;
     margin-top: 20px;
     margin-left: 5%;
+    margin-bottom: 20px;
 }
 
 .audio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 55%;
     height: 600px;
     background-color: #737271;
+    overflow: auto;
+}
+
+.audio-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    min-height: 180px;
+    width: 80%;
+    background-color: #141414;
+}
+
+.audio-card:last-child {
+    margin-bottom: 10px;
+}
+
+.cover {
+    width: 150px;
+    height: 150px;
+    background-color: #f2f1f0;
+}
+
+.head-card {
+    color: #f2f1f0;
+    text-align: center;
+}
+
+.name {
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+.author {
+    font-size: 0.5em;
+}
+
+.description {
+    width: 80%;
+    height: 50px;
+    background-color: #f2f1f0;
+}
+
+audio:focus {
+    outline: 0;
 }
 
 .panel {
@@ -123,41 +172,7 @@ footer {
 /*==================*/
 
 
-.audio-card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 250px;
-    width: 80%;
-    background-color: #141414;
-}
 
-.cover {
-    width: 180px;
-    height: 180px;
-    background-color: #f2f1f0;
-}
 
-.head-card {
-    height: 180px;
-    color: #f2f1f0;
-    text-align: center;
-}
 
-.name {
-    font-size: 2em;
-}
 
-.author {
-    font-size: 0.5em;
-}
-
-.description {
-    width: 80%;
-    height: 50px;
-    background-color: #f2f1f0;
-}
-
-audio:focus {
-    outline: 0;
-}
